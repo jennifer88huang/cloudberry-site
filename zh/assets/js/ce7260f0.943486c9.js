@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkCloudberry_Database_website=self.webpackChunkCloudberry_Database_website||[]).push([[813],{11316:e=>{e.exports=JSON.parse('{"permalink":"/zh/blog/tags/\u901a\u544a","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

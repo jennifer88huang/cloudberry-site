@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkCloudberry_Database_website=self.webpackChunkCloudberry_Database_website||[]).push([[4157],{52844:e=>{e.exports=JSON.parse('{"label":"Announcement","permalink":"/blog/tags/announcement","allTagsPath":"/blog/tags","count":3,"unlisted":false}')}}]);
