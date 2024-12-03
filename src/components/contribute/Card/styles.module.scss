@@ -1,0 +1,78 @@
+html[data-theme="light"] {
+  .wrap {
+    &:nth-of-type(1) {
+      .tIcon {
+        background-image: url(/img/home/feature/mef-light.svg);
+      }
+      &:hover {
+        .tIcon {
+          background-image: url(/img/home/feature/mef-light-hover.svg);
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .tIcon {
+        background-image: url(/img/home/feature/muc-light.svg);
+      }
+      &:hover {
+        .tIcon {
+          background-image: url(/img/home/feature/muc-light-hover.svg);
+        }
+      }
+    }
+  }
+}
+.wrap {
+  border: 1px solid var(--box-border-color);
+  padding: 20px;
+  width: 474px;
+  cursor: pointer;
+  &:nth-of-type(1) {
+    .tIcon {
+      background-image: url(/img/home/feature/mef.svg);
+    }
+  }
+  &:nth-of-type(2) {
+    .tIcon {
+      background-image: url(/img/home/feature/muc.svg);
+    }
+  }
+  .content {
+    margin: 10px 0;
+  }
+  .tIcon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+  }
+  .link {
+    color: var(--active-color);
+    display: flex;
+    align-items: center;
+    .icon {
+      fill: var(--active-color);
+    }
+    a {
+      color: inherit;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background-color: var(--active-color);
+    .content {
+      color: var(--sub-text-color-3);
+    }
+    .link {
+      color: var(--normal-text-color-1);
+
+      .icon {
+        fill: var(--normal-text-color-1);
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}

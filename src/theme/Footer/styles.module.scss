@@ -1,0 +1,137 @@
+.wrap {
+  height: 548px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--footer-bg-color);
+
+  .mainWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 168px;
+    margin: 80px auto 0;
+    max-width: var(--global-main-width);
+    .linksWrap {
+      display: flex;
+      width: 637px;
+      height: 328px;
+      flex-shrink: 0;
+      justify-content: space-between;
+      .footerLinkTitle {
+        color: #fff;
+        font-weight: 700;
+        line-height: 20px;
+      }
+      .footerLinkItem {
+        line-height: 20px;
+        margin-top: 24px;
+        a {
+          text-decoration: none;
+        }
+        &:hover {
+          a {
+            text-decoration: underline;
+            color: var(--active-color);
+          }
+        }
+      }
+    }
+    .logoLinkWrap {
+      margin-left: 212px;
+      width: 214px;
+      height: 108px;
+      flex-shrink: 0;
+      .logoWrap {
+        height: 60px;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+          width: 164px;
+        }
+        .swap {
+          width: 26px;
+          height: 26px;
+          cursor: pointer;
+        }
+      }
+      .links {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+          fill: #fff;
+          &:hover {
+            fill: var(--active-color);
+          }
+        }
+      }
+    }
+  }
+  .copyrightWrap {
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    font-size: 12px;
+    .copyright {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .linksWrap {
+      width: 520px !important;
+    }
+
+    .mainWrap {
+      padding: 0 var(--mobile-padding-width);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    .mainWrap {
+      flex-direction: column;
+      margin: 0;
+      .linksWrap {
+        position: static;
+        margin-top: 46px;
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        > div {
+          margin-bottom: 60px;
+        }
+      }
+      .logoLinkWrap {
+        position: static;
+        margin-bottom: 78px;
+        margin-left: 0 !important;
+        .logoWrap {
+          .logo {
+            width: 127px;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      position: static;
+      text-align: center;
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .mainWrap {
+      .linksWrap {
+        display: none !important;
+      }
+    }
+  }
+}
