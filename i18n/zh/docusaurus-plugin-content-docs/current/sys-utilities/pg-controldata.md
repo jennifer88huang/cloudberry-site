@@ -7,7 +7,7 @@ title: pg_controldata
 
 只有初始化集群且对数据目录有读取权限的用户才能运行此实用工具。这种访问限制确保了敏感控制信息的完整性和安全性。
 
-## 概要
+## 命令概要
 ```
 pg_controldata [option] [[ -D | --pgdata ]datadir]
 ```
